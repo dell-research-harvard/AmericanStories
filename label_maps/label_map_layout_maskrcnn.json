@@ -1,0 +1,42 @@
+[
+    {
+      "id": 0,
+      "name": "headline"
+    },
+    {
+      "id": 1,
+      "name": "article"
+    },
+    {
+      "id": 2,
+      "name": "newspaper_header"
+    },
+    {
+      "id": 3,
+      "name": "masthead"
+    },
+    {
+      "id": 4,
+      "name": "author"
+    },
+    {
+      "id": 5,
+      "name": "photograph"
+    },
+    {
+      "id": 6,
+      "name": "image_caption"
+    },
+    {
+      "id": 7,
+      "name": "page_number"
+    },
+    {
+      "id": 8,
+      "name": "table"
+    },
+    {
+      "id": 9,
+      "name": "cartoon_or_advertisement"
+    }
+]

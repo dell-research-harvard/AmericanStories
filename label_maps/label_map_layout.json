@@ -1,0 +1,12 @@
+{
+    "0": "article",
+    "1":"author",
+    "2": "cartoon_or_advertisement",
+    "3": "headline",
+    "4": "image_caption",
+    "5": "masthead",
+    "6": "newspaper_header",
+    "7": "page_number",
+    "8": "photograph",
+    "9": "table"
+}

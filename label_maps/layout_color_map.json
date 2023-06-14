@@ -1,0 +1,12 @@
+{
+    "article" : "blue",
+    "author" : "green",
+    "cartoon_or_advertisement" : "orange",
+    "headline" : "red",
+    "image_caption" : "blue",
+    "masthead": "purple",
+    "newspaper_header": "purple",
+    "page_number" : "purple",
+    "photograph" : "yellow",
+    "table" : "black"
+}
