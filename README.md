@@ -7,7 +7,7 @@
  Additionally, the structured article texts in the dataset enable the use of transformer-based methods for applications such as detecting reproduced content. This significantly enhances accuracy compared to relying solely on existing OCR techniques.
  The American Stories dataset serves as an invaluable resource for developing multimodal layout analysis models and other multimodal applications. Its vast size and silver quality make it ideal for innovation and research in this domain.
  
- ## Hugginface Dataset
+ ## Hugging Face Dataset
 The dataset is on the [Hugging Face Hub](https://huggingface.co/datasets/dell-research-harvard/AmericanStories). More information about the dataset can be found in the paper and the linked dataset card. 
  
  ## Accessing the data
