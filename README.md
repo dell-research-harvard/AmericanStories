@@ -48,6 +48,24 @@ dataset = load_dataset("dell-research-harvard/AmericanStories",
 
 ## Colab/Jupyter Notebooks
 
-## Replication Scripts Index
+
+
+## Replication
+
+We provide all models and scripts used to create American Stories. Processing newspaper scans is relatively simple: 
+
+1. Clone this repo to a relevant location and install dependencies:
+
+```
+git clone https://github.com/dell-research-harvard/AmericanStories.git`
+cd AmericanStories
+pip install -r requirements.txt
+```
+
+2. Download Models from [this Dropbox Folder](https://www.dropbox.com/sh/sfaf1nmuji9yhu6/AAAj1UGrPmCWFJUiTSP41ihpa?dl=0) to a `american_stories_models` folder
+
+3. Place one or more Newspaper Scans (in .jp2 format) in a `scans` folder. Example scans can be downloaded [here](https://chroniclingamerica.loc.gov/data/batches/ak_albatross_ver01/data/sn84020657/00279526685/1917010301/)
+
+4. Run `process_scans.sh`, scan output will be saved in an `output` folder. 
 
 

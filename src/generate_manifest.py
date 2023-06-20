@@ -1,3 +1,12 @@
+'''
+Various functions for scraping chronicling america metadata and generating batch-level manifests,
+lists of scans in each batch. 
+
+An example batch can be seen at: https://chroniclingamerica.loc.gov/data/batches/ak_albatross_ver01/
+
+Commented descriptions in the main function describe the various options for generating manifests
+'''
+
 import requests
 import re
 from tqdm import tqdm
@@ -552,7 +561,7 @@ if __name__ == '__main__':
     Run: Get all manifests for a list of dates
     '''
     # date_list = ['1846-03-01', '1856-03-01', '1866-03-01', '1876-03-01', '1886-03-01', '1896-03-01', '1906-03-01', '1916-03-01', '1926-03-01']
-    # os.chdir(r'C:\Users\bryan\Documents\NBER\chronicling_america\day_manifests')
+    # os.chdir(YOUR_DIR_HERE)
     # i = 0
     # for date in date_list:
     #     with open(f'./manifest_{date}.json', 'r') as f:
@@ -608,10 +617,10 @@ if __name__ == '__main__':
     '''
     Get list of batches
     '''
-    base_url = 'https://chroniclingamerica.loc.gov/data/batches/'
-    r = requests.get(base_url)
-    xml = r.text
-    all_batches = re.findall(r'<a href=".*">.*</a>', xml)[1:-1]
-    batches = [b.split('>')[1].split('<')[0] for b in all_batches]
-    with open(r'C:\Users\bryan\Documents\NBER\chronicling_america\ca_batches.txt', 'w') as outfile:
-        outfile.write('\n'.join(batches))
+    # base_url = 'https://chroniclingamerica.loc.gov/data/batches/'
+    # r = requests.get(base_url)
+    # xml = r.text
+    # all_batches = re.findall(r'<a href=".*">.*</a>', xml)[1:-1]
+    # batches = [b.split('>')[1].split('<')[0] for b in all_batches]
+    # with open(YOUR_DIR_HERE, 'w') as outfile:
+    #     outfile.write('\n'.join(batches))

@@ -1,7 +1,9 @@
 import json
 import os
 
-os.chdir(r'C:\Users\bryan\Documents\NBER\chronicling_america\day_manifests')
+LOGS_DIR = 'YOUR_LOGS_DIR_HERE'
+
+os.chdir(LOGS_DIR)
 chunk_size = 20
 manifest_list = []
 paths = [p for p in os.listdir() if 'error' not in p and p.endswith('.json')]
