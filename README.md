@@ -48,6 +48,8 @@ dataset = load_dataset("dell-research-harvard/AmericanStories",
 
 ## Colab/Jupyter Notebooks
 
+### [Demo Notebook](https://colab.research.google.com/drive/1ifzTDNDtfrrTy-i7uaq3CALwIWa7GB9A?ts=648b98bf)
+
 ## Replication
 
 We provide all models and scripts used to create American Stories. Processing newspaper scans is relatively simple: 
