@@ -324,6 +324,14 @@ def main(args):
 
     # Import pdf converter if needed
     if any([f.endswith('.pdf') for f in filenames]):
+        '''
+        NOTE: PDF functionality is not included in the requirements.txt file because it tends to 
+        create compatiblity problems on Azure machines. If you want to use the functionality, 
+        first run
+            `pip install pikepdf`
+        in your environment. Then provide one or more pdf files (can be downloaded from 
+        chronicling america or stored locally) in either your manifest or your directory. 
+        '''
         from stages.pdfs_to_images import pdfs_to_images
 
     # Set up logging
