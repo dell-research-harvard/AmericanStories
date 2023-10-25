@@ -48,9 +48,11 @@ dataset = load_dataset("dell-research-harvard/AmericanStories",
 
 ## Colab/Jupyter Notebooks
 
-### [Demo Notebook](https://colab.research.google.com/drive/1ifzTDNDtfrrTy-i7uaq3CALwIWa7GB9A?ts=648b98bf)
+### [Dataset Demo Notebook](https://colab.research.google.com/drive/1ifzTDNDtfrrTy-i7uaq3CALwIWa7GB9A?ts=648b98bf)
 
-### [Starter Notebook](https://colab.research.google.com/drive/1S5FfPV1vO0fSJl7NPI48dZxoVSSxbkG_?usp=sharing)
+### [Dataset Extended Examples Notebook](https://colab.research.google.com/drive/1S5FfPV1vO0fSJl7NPI48dZxoVSSxbkG_?usp=sharing)
+
+### [Processing Scans Example Notebook](https://colab.research.google.com/drive/1eU4M9HUJ1e4r5jnAaNer1VP-hEA35VIm?usp=sharing)
 
 ## Replication
 
