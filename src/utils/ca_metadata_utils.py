@@ -10,7 +10,7 @@ from rdflib.namespace import RDF, DCTERMS, OWL, DC
 
 # Load in ISO 639-2 language codes -- mapping from 2 or 3-letter code to English name of language. 
 # Needed because languge is given by a URI in the RDF file, and the end of the URI is the 3-letter code.
-LANGUAGES_FILE = '/img2txt_pipeline/utils/iso_639_2_languages.json'
+LANGUAGES_FILE = './AmericanStories/src/utils/iso_639_2_languages.json'
 with open(LANGUAGES_FILE, 'r') as f:
     LANGUAGE_CODES = json.load(f)
 
