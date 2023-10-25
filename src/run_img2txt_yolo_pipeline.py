@@ -322,6 +322,10 @@ def main(args):
     if first_n:
         filenames = filenames[:first_n]
 
+    # Import pdf converter if needed
+    if any([f.endswith('.pdf') for f in filenames]):
+        from stages.pdfs_to_images import pdfs_to_images
+
     # Set up logging
     for handler in logging.root.handlers[:]:
         logging.root.removeHandler(handler)
