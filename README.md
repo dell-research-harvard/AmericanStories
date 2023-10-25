@@ -56,7 +56,7 @@ dataset = load_dataset("dell-research-harvard/AmericanStories",
 
 ## Replication
 
-We provide all models and scripts used to create American Stories. Processing newspaper scans is relatively simple: 
+We provide all models and scripts used to create American Stories. Processing newspaper scans is relatively simple. Follow the instructions below or refer to the "Processing Scans Example Notebook" above.  
 
 1. Clone this repo to a relevant location and install dependencies:
 
@@ -69,6 +69,13 @@ pip install -r requirements.txt
 2. Download Models from [this Dropbox Folder](https://www.dropbox.com/sh/sfaf1nmuji9yhu6/AAAj1UGrPmCWFJUiTSP41ihpa?dl=0) to a `american_stories_models` folder
 
 3. Place one or more Newspaper Scans (in .jp2 format) in a `scans` folder. Example scans can be downloaded [here](https://chroniclingamerica.loc.gov/data/batches/ak_albatross_ver01/data/sn84020657/00279526685/1917010301/)
+
+**Note:** PDF format scans are supported, but the dependencies are not install by default, because the `pikepdf` package has caused dependency conflicts on some machines and with some python versions. If you are planning to process pdfs, you can process them in the same way, but must
+first install `pikepdf`:
+
+```
+pip install pikepdf
+```
 
 4. Run `process_scans.sh`, scan output will be saved in an `output` folder. 
 
