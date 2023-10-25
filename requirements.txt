@@ -20,7 +20,7 @@ setuptools==58.0.4
 symspellpy==6.7.6
 timm==0.6.2.dev0
 torch==1.11.0
-torchvision==0.11.0
+torchvision==0.12.0
 tqdm==4.64.1
 umap==0.1.1
 memory_profiler==0.61.0

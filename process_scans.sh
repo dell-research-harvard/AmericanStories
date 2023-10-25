@@ -5,10 +5,11 @@ python ./AmericanStories/src/run_img2txt_yolo_pipeline.py --manifest_path ./scan
 									    --label_map_path_line ./AmericanStories/src/label_maps/label_map_line.json \
 								        --effocr_recognizer_dir ./american_stories_models/word_recognizer_new \
 									    --effocr_char_recognizer_dir ./american_stories_models/char_recognizer \
-								        --effocr_localizer_dir ./american_stories_models/localizer_model_new.onnx \
+								        --effocr_localizer_dir ./american_stories_models/ \
 								        --output_save_path ./AmericanStories/outputs \
 									    --legibility-classifier ./american_stories_models/legibility_model_new.onnx \
 									    --localizer_model_backend yolov8 \
 									    --line_model_backend yolov8 \
 									    --layout_model_backend yolov8 \
 									    --recognizer_word_thresh 0.85 \
+										--word-level-effocr

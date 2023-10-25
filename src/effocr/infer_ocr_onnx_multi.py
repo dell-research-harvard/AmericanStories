@@ -249,7 +249,7 @@ def run_effocr(coco_images, localizer_engine, recognizer_engine, char_transform,
         im = coco_images[im_idx][1]
         
         # Get bounding boxes and labels, agnostic to the backend used 
-        if localizer_engine._model_backend == 'yolo':
+        if localizer_engine._model_backend == 'yolo' or localizer_engine._model_backend == 'yolov8':
             result = result[0][0]
             bboxes, labels = result[:, :4], result[:, -1]
         elif localizer_engine._model_backend == 'detectron2':

@@ -33,7 +33,6 @@ import random
 import multiprocessing
 import time
 from math import floor, ceil
-from models.encoders import *
 from pytorch_metric_learning.utils.inference import FaissKNN
 from pytorch_metric_learning.utils import common_functions as c_f
 
@@ -718,8 +717,12 @@ def main(args):
         
 
         # convert the inference results to COCO format
-        with open(os.path.join(output_save_path, "{}.json".format('_'.join(filenames[f_idx].strip()[:-4].split('/')[-4:]))), "w") as f:
-            json.dump(metadata, f, indent=2)
+        if os.path.isdir(manifest_path):
+            with open(os.path.join(output_save_path, os.path.basename(filenames[f_idx]).replace('jp2', 'json').replace('pdf', 'json')), 'w') as f:
+                json.dump(metadata, f, indent=2)
+        else:
+            with open(os.path.join(output_save_path, "{}.json".format('_'.join(filenames[f_idx].strip()[:-4].split('/')[-4:]))), "w") as f:
+                json.dump(metadata, f, indent=2)
         
         if bbox_output:
             with open(os.path.join(output_save_path, "inference_coco_{}.json".format(filenames[f_idx].strip().split('/')[-1][:-4])), "w") as f:
